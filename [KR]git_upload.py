@@ -50,9 +50,9 @@ def first_git():
 
 def github_upload(msg=str):
     list_command = [
-    'git status',
     f'git commit -m "[{datetime.now().strftime("%Y-%m-%d/%H:%M:%S")}] {msg}"',
-    'git push origin +main'
+    'git push origin +main',#처음에만 +main필요 (+표시는 마스터 권한 푸시를 뜻함)
+    'git status'
     ]
 
     for i in list_command:
