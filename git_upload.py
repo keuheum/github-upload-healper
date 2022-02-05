@@ -62,4 +62,4 @@ def github_upload(msg=str):
     print("깃헙 업로드 완료.")
 
 if __name__ == "__main__":
-    main()
+    main() 
