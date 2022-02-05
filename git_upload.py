@@ -52,7 +52,7 @@ def github_upload(msg=str):
     list_command = [
     'git status',
     f'git commit -m "[{datetime.now().strftime("%Y-%m-%d/%H:%M:%S")}] {msg}"',
-    'git push origin main'
+    'git push origin +main'
     ]
 
     for i in list_command:
